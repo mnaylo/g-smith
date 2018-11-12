@@ -4,158 +4,132 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
         * {
             box-sizing: border-box;
         }
 
-        .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-            height: 500px;
-            border-style: solid;
-            border-color: rgb(242, 242, 242);
-            border-width: 2px;
+        body {
+            background-color: rgb(0, 136, 174);
         }
 
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            height: auto;
+        }
 
+        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
             .column {
                 width: 100%;
             }
         }
 
-        body {
-            background-color: rgb(242, 242, 242);
-
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h1 {
-            color: rgb(12, 39, 105);
-            border-bottom-style: solid;
-            border-color: rgb(255, 255, 255);
-            border-bottom-width: 1px;
-            padding: 20px;
-            font-size: 34px;
-            font-weight: bold;
-            text-align: center;
-        }
-
         h2 {
-            color: rgb(91, 179, 255);
-            font-size: 28px;
+            color: rgb(31, 73, 85);
+            font-size: 36px;
             text-align: center;
+        }
+
+        p {
+            color: rgb(193, 177, 150);
+            text-align: center;
+            font-style: italic;
+            font-size: 18px;
         }
 
         strong {
-            color: rgb(198, 28, 36);
+            color: rgb(0, 0, 0);
             font-weight: bold;
         }
 
         footer {
-            padding: 60px;
+            padding: 30px;
             text-align: center;
+            align-content: center;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>CYBERSECURITY DASHBOARD</h1>
-
+    <h2>George E. Smith</h2>
+    <p>George E. Smith, 68 of Hurricane, formerly of New Nampshire, died November 12, 2014. George is a graduate of
+        Portsmouth High School and Concord University. He was president of the TKE Fraternity and graduated from James
+        Madison University. George is a retired school teacher from Scott Teays Elementary School.</p>
+    <p>He is preceded in death by his parents George and Ina Smith. He is survived by his wife of 45 years, Mrs.
+        Catherine Naylor-Smith; children Matthew Smith and wife Cris Garabato-Smith, Leah Wallace and husband Brian and
+        Whitney Naylor-Smith; six grandchildren Jana, Colin, Valan, Kherington, Jade and Ellery and many other family
+        and friends.
+    </p>
+    <br>
 
     <div class="row">
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>CIS Top 20 Controls</h2>
-            <img src="bar_chart.png" alt="bar_chart" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Input from quarterly self-assessments.</p>
-            <p><strong>Feed from CIS Top 20 / HIPAA / PCI compliance elasticsearch.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="one.png" alt="1" width="99%" height="auto">
+            </center>
         </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Risk Management</h2>
-            <img src="chart-down.png" alt="chart-down" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Feed from Risk register.</p>
-            <p><strong>Third-party risk score from new automated process.</strong></p>
-           <p><strong>Heatmap.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="two.png" alt="2" width="99%" height="auto">
+            </center>
         </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Supporting Projects</h2>
-            <img src="checklist.png" alt="checklist" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Input from Smartsheet.</p>
-            <p><strong>List of projects in progress to support Critical Security Controls.</strong></p>
-        </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Cloud Security</h2>
-            <img src="vert_bar.png" alt="vert_bar" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Data from CloudHealth.</p>
-            <strong>CIS Benchmarks for AWS Cloud Security.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="three.png" alt="3" width="99%" height="auto">
+            </center>
         </div>
     </div>
 
     <div class="row">
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Security Awareness</h2>
-            <img src="Line-chart-icon.png" alt="Line-chart" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Data from KnowBe4 API.</p>
-            <p><strong>Metrics from Phishing campaigns.</strong></p>
-            <p><strong>Metrics from assigned training completion.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="four.png" alt="4" width="99%" height="auto">
+            </center>
         </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Security Incidents</h2>
-            <img src="warn.png" alt="warn" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Data from Pagerduty API and SIEM</p>
-            <p><strong>Feed of active security incidents.</strong></p>
-            <p><strong>Mean-time between security incidents.</strong></p>
-            <p><strong>Mean-time to recovery from Incidents.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="five.png" alt="5" width="99%" height="auto">
+            </center>
         </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Application Security</h2>
-            <img src="dual_line.png" alt="dual_line" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Data from Checkmarx and CodePipeline.</p>
-            <p><strong>% of public applications tested with tools.</strong></p>
-            <p><strong>Number of High vulnerabilities for all onboarded applications.</strong></p>
-            <p><strong>Testing coverage, all applications vs those that are onboarded.</strong></p>
+        <div class="column" ;">
+            <center>
+                <img src="six.png" alt="6" width="99%" height="auto">
+            </center>
         </div>
-        <div class="column" style="background-color: rgb(255, 255, 255);">
-            <h2>Vulnerability Management</h2>
-            <img src="pie_chart red.png" alt="pie_chart" class="center" style="width:auto;height:180px" ;>
-            <br>
-            <p>Data from Qualys.</p>
-            <p><strong>Scanning coverage, all IPs vs those scanned.</strong></p>
-            <p><strong>% of systems with known critical vulnerabilities.</strong></p>
-            <p><strong>Patching coverage, systems scanned vs patched.</strong></p>
-            <p><strong>Live threat intel feed.</strong></p>
+    </div>
+
+    <div class="row">
+        <div class="column" ;">
+            <center>
+                <img src="seven.png" alt="7" width="99%" height="auto">
+            </center>
+        </div>
+        <div class="column" ;">
+            <center>
+                <img src="eight.png" alt="8" width="99%" height="auto">
+            </center>
+        </div>
+        <div class="column" ;">
+            <center>
+                <img src="nine.png" alt="9" width="99%" height="auto">
+            </center>
         </div>
     </div>
 
     <footer>
-        <img src="16GEA_1_TH_haier_logo16.png" alt="16GEA" style="width:auto;height:120px;">
+        <img src="compass.png" alt="compass" height="128" width="auto">
+        <p><strong>Myrtle Beach SC 33° 39'11" N 78° 55'24" W</strong></p>
     </footer>
-
 </body>
 
 </html>
